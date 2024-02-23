@@ -1,0 +1,6 @@
+#+title: Write an interpreter in go
+
+* DONE Chapter 1 - Lexing
+Build a lexer, so far so good.
+What seemed to be really complex now is clear and simple.
+Now I feel confident writing a lexer, actually I will say more, I can do a better job (in some specific case) than the code in the book.
