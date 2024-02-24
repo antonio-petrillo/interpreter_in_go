@@ -120,16 +120,9 @@ func isLetter(ch byte) bool {
 }
 
 func (l *Lexer) skipWhiteSpace() {
-	// if l.ch == ' ' || l.ch == '\t' || l.ch == '\n' || l.ch == '\r' {
-	// 	l.readChar()
-	// }
-	for isWhiteSpace(l.ch) {
+	for l.ch == ' ' || l.ch == '\t' || l.ch == '\n' || l.ch == '\r' {
 		l.readChar()
 	}
-}
-
-func isWhiteSpace(ch byte) bool {
-	return ch == ' ' || ch == '\t' || ch == '\n' || ch == '\r'
 }
 
 func (l *Lexer) readNumber() string {
