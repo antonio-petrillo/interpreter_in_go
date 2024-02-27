@@ -9,3 +9,4 @@ Parserize the token obtained from previous step.
 On some parts I need to study a little bit further, but overall I'm ok.
 The techinique used to parse the precedence in the parsing is really nice.
 Now I also understand why the parsing for lisp is trivial.
+* TODO Chapter 3 - Evaluating
