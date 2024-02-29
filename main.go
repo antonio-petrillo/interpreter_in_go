@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"monkey/repl"
 	"os"
 	"os/user"
-	"monkey/repl"
 )
 
 func main() {
@@ -12,8 +12,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("Hello %s! This is the PIG programming language!\n", user.Username)
-
-	fmt.Printf("Feel free to type commands\n")
+	fmt.Printf("Hello %s! This is the Pigging programming language!\n",
+		user.Username)
+	fmt.Printf("Feel free to type in commands\n")
 	repl.Start(os.Stdin, os.Stdout)
 }

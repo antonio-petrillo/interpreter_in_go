@@ -2,33 +2,34 @@ package token
 
 type TokenType string
 
-type Token struct {
-	Type TokenType
-	Literal string
-}
-
 const (
 	ILLEGAL = "ILLEGAL"
-	EOF = "EOF"
+	EOF     = "EOF"
 
-	IDENT = "IDENT"
-	INT = "INT"
+	STRING = "STRING"
 
-	ASSIGN = "="
-	BANG = "!"
-	PLUS = "+"
-	MINUS = "-"
+	// Identifiers + literals
+	IDENT = "IDENT" // add, foobar, x, y, ...
+	INT   = "INT"   // 1343456
+
+	// Operators
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
 	ASTERISK = "*"
-	SLASH = "/"
+	SLASH    = "/"
+
 	LT = "<"
 	GT = ">"
-
-	EQ = "=="
-	NOT_EQ = "!="
 	LE = "<="
 	GE = ">="
 
-	COMMA = ","
+	EQ     = "=="
+	NOT_EQ = "!="
+
+	// Delimiters
+	COMMA     = ","
 	SEMICOLON = ";"
 
 	LPAREN = "("
@@ -36,23 +37,28 @@ const (
 	LBRACE = "{"
 	RBRACE = "}"
 
+	// Keywords
 	FUNCTION = "FUNCTION"
-	LET = "LET"
-	IF = "IF"
-	ELSE = "ELSE"
-	RETURN = "RETURN"
-	TRUE = "TRUE"
-	FALSE = "FALSE"
-
+	LET      = "LET"
+	TRUE     = "TRUE"
+	FALSE    = "FALSE"
+	IF       = "IF"
+	ELSE     = "ELSE"
+	RETURN   = "RETURN"
 )
 
-var keywords = map[string]TokenType {
-	"fn": FUNCTION,
-	"let": LET,
-	"true": TRUE,
-	"false": FALSE,
-	"if": IF,
-	"else": ELSE,
+type Token struct {
+	Type    TokenType
+	Literal string
+}
+
+var keywords = map[string]TokenType{
+	"fn":     FUNCTION,
+	"let":    LET,
+	"true":   TRUE,
+	"false":  FALSE,
+	"if":     IF,
+	"else":   ELSE,
 	"return": RETURN,
 }
 

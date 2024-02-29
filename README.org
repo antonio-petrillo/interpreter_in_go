@@ -9,4 +9,8 @@ Parserize the token obtained from previous step.
 On some parts I need to study a little bit further, but overall I'm ok.
 The techinique used to parse the precedence in the parsing is really nice.
 Now I also understand why the parsing for lisp is trivial.
-* TODO Chapter 3 - Evaluating
+* DONE Chapter 3 - Evaluating
+Pretty similar to a brainfuck interpreter that I made in the past.
+I got lazy and instead of refactoring my code (~gofmt~ don't work on my machine ☹️), I copied the one from the source code at the end.
+One downside is that I've lost the implementation, altough pretty simple to reimplement, for ~>=~ and ~<=~ infix operator.
+* TODO Chapter 4 - Extending the language
