@@ -13,4 +13,7 @@ Now I also understand why the parsing for lisp is trivial.
 Pretty similar to a brainfuck interpreter that I made in the past.
 I got lazy and instead of refactoring my code (~gofmt~ don't work on my machine ☹️), I copied the one from the source code at the end.
 One downside is that I've lost the implementation, altough pretty simple to reimplement, for ~>=~ and ~<=~ infix operator.
-* TODO Chapter 4 - Extending the language
+* DONE Chapter 4 - Extending the language
+Chapter completer fairly easy, with all the work done in the previous ones, this was a breeze.
+I'm fairly happy to have read this book, but now my curiosity for this theme is pretty high.
+Has the author said in the introduction this book is focused on write an interpreter and not much else, I'm curios to see the same problem solved in a lower leve language, like C.

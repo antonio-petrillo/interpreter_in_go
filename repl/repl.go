@@ -10,7 +10,7 @@ import (
 	"monkey/parser"
 )
 
-const PROMPT = "PIGLANG>> "
+const PROMPT = "REPL>> "
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
