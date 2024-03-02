@@ -4,16 +4,20 @@
 Build a lexer, so far so good.
 What seemed to be really complex now is clear and simple.
 Now I feel confident writing a lexer, actually I will say more, I can do a better job (in some specific case) than the code in the book.
+
 * DONE Chapter 2 - Parsing
 Parserize the token obtained from previous step.
 On some parts I need to study a little bit further, but overall I'm ok.
 The techinique used to parse the precedence in the parsing is really nice.
 Now I also understand why the parsing for lisp is trivial.
+
 * DONE Chapter 3 - Evaluating
 Pretty similar to a brainfuck interpreter that I made in the past.
 I got lazy and instead of refactoring my code (~gofmt~ don't work on my machine ☹️), I copied the one from the source code at the end.
 One downside is that I've lost the implementation, altough pretty simple to reimplement, for ~>=~ and ~<=~ infix operator.
+
 * DONE Chapter 4 - Extending the language
-Chapter completer fairly easy, with all the work done in the previous ones, this was a breeze.
+Chapter completer fairly easy, with all the work done in the previous ones, this last part was a breeze.
+I also invested a little bit of time to reimplement the ~>=~ and ~<=~ operator.
 I'm fairly happy to have read this book, but now my curiosity for this theme is pretty high.
-Has the author said in the introduction this book is focused on write an interpreter and not much else, I'm curios to see the same problem solved in a lower leve language, like C.
+Has the author said in the introduction this book is focused on write an interpreter and not much else, I'm curios to see the same problem solved in a lower level language, like C.
